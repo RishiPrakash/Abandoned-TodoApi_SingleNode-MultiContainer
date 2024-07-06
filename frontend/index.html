@@ -112,7 +112,7 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ newData: dataInput })
+                    body: JSON.stringify({ Name: dataInput })
                 });
                 const result = await response.json();
                 document.getElementById('message').innerText = 'Data added successfully.';
